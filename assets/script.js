@@ -28,6 +28,9 @@ credit.textContent = `Created by ${yourName}`
 // Event listener for clicks on the "+" button for Gingerbread cookies
 gbPlusBtn.addEventListener('click', function(){
    gb++
+   total++
+const totalQty = document.querySelector("#qty-total")
+totalQty.textContent = total
     const gbQuantity = document.querySelector('#qty-gb')
    gbQuantity.textContent = gb
 })
@@ -36,17 +39,26 @@ gbPlusBtn.addEventListener('click', function(){
 
 ccPlusBtn.addEventListener('click', function(){
     cc++
+    total++
+const totalQty = document.querySelector("#qty-total")
+totalQty.textContent = total
      const ccQuantity = document.querySelector('#qty-cc')
     ccQuantity.textContent = cc
  })
 
  sugarPlusBtn.addEventListener('click', function(){
     sugar++
+    total++
+const totalQty = document.querySelector("#qty-total")
+totalQty.textContent = total
      const sugarQuantity = document.querySelector('#qty-sugar')
     sugarQuantity.textContent = sugar
  })
  gbMinusBtn.addEventListener('click', function(){
     gb--
+    total--
+    const totalQty = document.querySelector("#qty-total")
+    totalQty.textContent = total
      const gbQuantity = document.querySelector('#qty-gb')
     gbQuantity.textContent = gb
  })
@@ -55,12 +67,18 @@ ccPlusBtn.addEventListener('click', function(){
  
  ccMinusBtn.addEventListener('click', function(){
      cc--
+     total--
+    const totalQty = document.querySelector("#qty-total")
+    totalQty.textContent = total
       const ccQuantity = document.querySelector('#qty-cc')
      ccQuantity.textContent = cc
   })
  
   sugarMinusBtn.addEventListener('click', function(){
      sugar--
+     total--
+    const totalQty = document.querySelector("#qty-total")
+    totalQty.textContent = total
       const sugarQuantity = document.querySelector('#qty-sugar')
      sugarQuantity.textContent = sugar
   })
